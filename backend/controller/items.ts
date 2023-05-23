@@ -12,7 +12,7 @@ export default {
 
   add: (req: Request, res: Response)=>{
     const { name, price, image,color, type, size, gender, keyword, description, conditions}=req.body
-    items.create({name: name, price: price, image: image, color: color, type: type, size: size, gender: gender, keyword: keyword, description: description, conditions: conditions})
+     items.create({name: name, price: price, image: image, color: color, type: type, size: size, gender: gender, keyword: keyword, description: description, conditions: conditions})
     .then(item=>res.send(item))
   },
 
