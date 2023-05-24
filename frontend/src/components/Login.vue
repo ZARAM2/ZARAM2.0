@@ -36,7 +36,7 @@
 
 
 <script lang="ts">
-const currentUser=JSON.parse(localStorage.getItem("currentUser") as any)
+// const currentUser=JSON.parse(localStorage.getItem("currentUser") as any)
 import axios from "axios"
 
 
