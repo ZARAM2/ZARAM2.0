@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 // import HelloWorld from './components/HelloWorld.vue'
 // import NavBar from './components/NavBar.vue';
 // import Home from './components/Home.vue';
@@ -9,14 +8,6 @@
   
  <router-view/>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
-
-import Offcanvas from './components/Offcanvas/Offcanvas.vue'
-</script>
-
-<template>
-
-  <Offcanvas  />
-
 </template>
 
 <style scoped>
