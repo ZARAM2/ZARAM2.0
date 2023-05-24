@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar/Navbar.vue";
+import NavBar from "../frontend/components/NavBar.vue"
 import axios from "axios";
 import LargeOneItem from "@/components/OneItem/LargeOneItem.vue";
 

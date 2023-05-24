@@ -1,5 +1,6 @@
 <template>
     <div>
+      <h3></h3>
       <div
         class="offcanvas offcanvas-start"
         tabindex="-1"
@@ -10,6 +11,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="gender-container" style="margin-left: 30px;">
+          
           <button class="search-gender" @click="setChosen('woman')">WOMAN</button>
           <button class="search-gender" @click="setChosen('man')">MAN</button>
           <button class="search-gender" @click="setChosen('kids')">KIDS</button>
@@ -25,16 +27,17 @@
   
   <script>
   import { ref } from "vue";
-  import WomanItems from "./WomanItems.vue";
-  import ManItems from "./ManItems.vue";
-  import KidsItems from "./KidsItems.vue";
-  
-  export default {
-    name:"Offcanvas",
+  // import WomanItems from "./WomanItems.vue"
+  // import ManItems from "./ManItems.vue";
+  // import KidsItems from "./KidsItems.vue";
+  import { defineComponent } from "vue";
+
+export default defineComponent({
+    name:"Canvas",
     components: {
-      WomanItems,
-      ManItems,
-      KidsItems,
+      // WomanItems,
+      // ManItems,
+      // KidsItems,
     },
     setup() {
       const chosen = ref("woman");
@@ -48,12 +51,12 @@
         setChosen,
       };
     },
-  };
+  });
   </script>
   
   <style scoped>
   .offcanvas-content {
-    margin-top: 25px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
   }

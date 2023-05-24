@@ -1,21 +1,33 @@
 <template>
   <div>
+    
     <router-link to="/login"> <p class="login">LOG IN</p></router-link>
    <router-link to="/home"> <img class="logo" src="..\assets\Logo.png" /></router-link>
     <img class="menu" src="..\assets\img\menu.png"/>
     <p class="help">HELP</p>
     <P class="search">SEARCH</P>
     <img class="bag"  src="..\assets\img\bag.png" />
+    <Canvas/>
   </div>
 
 </template>
 
 <script lang="ts">
-
+import Canvas from "./Offcanvas/canvas.vue"
 export default {
   name: 'NavBar',
   components: {
-   
+    Canvas
+  },
+  data(){
+    return{
+      showMenu: true,
+    }
+  },
+  methods:{
+    menu(){
+      !this.showMenu
+    }
   }
 }
 </script>

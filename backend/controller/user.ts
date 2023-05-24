@@ -43,6 +43,7 @@ export default {
     },
 
     login: async (req: Request, res: Response)=>{
+        console.log(req.body)
         const { email, pass } = req.body
         const loggedUser = await User.findOne({email: email})
         if(!loggedUser){

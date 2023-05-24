@@ -1,22 +1,22 @@
 <template>
    
-      <!-- <RouterLink to="/man/suits" class="offcanvas-body">SUITS</RouterLink>
+      <RouterLink to="/man/suits" class="offcanvas-body">SUITS</RouterLink>
       <RouterLink to="/man/shirts" class="offcanvas-body">SHIRTS</RouterLink>
       <RouterLink to="/man/jackets" class="offcanvas-body">JACKETS | OVERSHIRTS</RouterLink>
       <RouterLink to="/man/trousers" class="offcanvas-body">TROUSERS</RouterLink>
       <RouterLink to="/man/jeans" class="offcanvas-body">JEANS</RouterLink>
       <RouterLink to="/man/shorts" class="offcanvas-body">SHORTS</RouterLink>
-      <RouterLink to="/man/hoodies" class="offcanvas-body">HOODIES | SWEATSHIRTS</RouterLink> -->
+      <RouterLink to="/man/hoodies" class="offcanvas-body">HOODIES | SWEATSHIRTS</RouterLink>
     
   </template>
   
   <script>
-//   import { motion } from "vue-motion";
+  // import { motion } from "vue-motion";
   import { RouterLink } from "vue-router";
   
   export default {
     components: {
-    //   motion,
+      // motion,
       RouterLink,
     },
     data() {

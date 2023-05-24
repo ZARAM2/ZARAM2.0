@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Navbar from "../../../components/Navbar/Navbar.vue";
+import Navbar from "../../../components/Navbar.vue";
 import axios from "axios";
 import LargeOneItem from "../../../components/OneItem/LargeOneItem.vue";
 

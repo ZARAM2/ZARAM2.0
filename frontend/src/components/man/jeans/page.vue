@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navbar></navbar>
+    <navbar/>
     <div>
       <large-one-item
         v-for="(item, index) in items"
@@ -8,7 +8,7 @@
         :image="item.image"
         :name="item.name"
         :price="item.price"
-      ></large-one-item>
+      />
     </div>
   </div>
 </template>
