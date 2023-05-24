@@ -2,10 +2,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import NavBar from '../components/NavBar.vue';
+import Canvas from "../components/Offcanvas/canvas.vue";
 export default {
   name: 'Home',
   components: {
+    Canvas,
     NavBar
+    
   }
 }
 
@@ -16,7 +19,10 @@ export default {
 <template>
     <div class="nav">
     <NavBar/>
- </div>   
+    
+ </div>
+ <Canvas/>
+    
 <div>
  
     

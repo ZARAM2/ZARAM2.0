@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../components/Home.vue"
 import HelloWorldVue from "../components/HelloWorld.vue";
 import Login from "../components/Login.vue"
-
+import Canvas from "../components/Offcanvas/Canvas.vue";
 const routes=[    //call the components here
  {
     path: "/home",
@@ -14,7 +14,11 @@ const routes=[    //call the components here
  {
     path: "/login",
     component: Login
- }
+ },
+ {
+    path:"/c",
+    component: Canvas
+},
 ]  
 
 
