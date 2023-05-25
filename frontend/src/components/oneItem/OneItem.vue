@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import './OneItem.css';
+
 import AddToCart from "../AddToCart/page.vue";
 
 export default {
@@ -46,5 +46,18 @@ export default {
 </script>
 
 <style scoped>
-/* Add the styles from OneItem.css here */
+
+.item-container{
+  margin: 20px;
+}
+
+.details-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.detail-text{
+  font-family: "zara";
+  font-size: 13px;
+}
 </style>

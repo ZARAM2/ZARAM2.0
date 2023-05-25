@@ -17,6 +17,8 @@ import babyBoy from "../components/kids/babyBoy/page.vue"
 import babyGirl from "../components/kids/babyGirl/page.vue"
 import boy from "../components/kids/boy/page.vue"
 import girl from "../components/kids/girl/page.vue"
+//search
+import search from "../components/search/page.vue"
 const routes=[    //call the components here
  {
     path: "/home",
@@ -75,6 +77,10 @@ const routes=[    //call the components here
   {
     path: "/babyGirl",
     component: babyGirl
+  },
+  {
+    path: "/search",
+    component: search
   },
 ]  
 
