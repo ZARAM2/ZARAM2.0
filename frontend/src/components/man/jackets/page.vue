@@ -1,8 +1,8 @@
 <template>
   <div>
-    <navbar/>
+    <Navbar/>
     <div>
-      <large-one-item
+      <LargeOneItem
         v-for="(item, index) in items"
         :key="index"
         :image="item.image"
@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import Navbar from "../../../components/Navbar/Navbar.vue";
-import LargeOneItem from "../../../components/OneItem/LargeOneItem.vue";
+import Navbar from "../../NavBar.vue";
+import LargeOneItem from "../../oneItem/LargeOneItem.vue";
 import axios from "axios";
 
 export default {
-  name: "Page",
+  name: "jackets",
   components: {
     Navbar,
     LargeOneItem,
