@@ -29,31 +29,31 @@ const routes=[    //call the components here
     component: Canvas
 },
 {
-    path:"/trousers",
+    path:"/women/trousers",
     component: trousers
 },
 {
-    path:"/jeans",
+    path:"/women/jeans",
     component: jeans
 },
 {
-    path:"/waistcoats",
+    path:"/women/waistcoats",
     component: waistcoats
 },
 {
-    path:"/tops",
+    path:"/women/tops",
     component: tops
 },
 {
-    path:"/skirts",
+    path:"/women/skirts",
     component: skirts
 },
 {
-    path:"/dresses",
+    path:"/women/dresses",
     component: dresses
 },
 {
-    path:"/jackets",
+    path:"/women/jackets",
     component: jackets
 },
 ]  
