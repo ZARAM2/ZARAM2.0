@@ -7,7 +7,7 @@
 
 
 <div class='container-login'>
-  <Navbar/>
+  <NavBar/>
   <div class='Left-login-form'>
   <h6 class='login-heading'>LOG IN TO YOUR ACCOUNT</h6>
 
@@ -38,12 +38,13 @@
 <script lang="ts">
 // const currentUser=JSON.parse(localStorage.getItem("currentUser") as any)
 import axios from "axios"
+import NavBar from '../components/NavBar.vue';
 
 
 export default {
   name: 'Login',
   components: {
-   
+    NavBar
   },
   data() {
     
@@ -136,5 +137,6 @@ body{
     color: black;
     margin-bottom: 100px;
   }
+
 
 </style>
