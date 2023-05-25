@@ -4,6 +4,15 @@ import Home from "../components/Home.vue"
 import HelloWorldVue from "../components/HelloWorld.vue";
 import Login from "../components/Login.vue"
 import Canvas from "../components/Offcanvas/Canvas.vue";
+//for the women $
+import jackets from "../components/women/jackets/page.vue";
+import dresses from "../components/women/dresses/page.vue";
+import skirts from "../components/women/skirts/page.vue";
+import tops from "../components/women/tops/page.vue";
+import jeans from "../components/women/jeans/page.vue";
+import waistcoats from "../components/women/waistcoats/page.vue";
+import trousers from "../components/women/trousers/page.vue";
+
 const routes=[    //call the components here
  {
     path: "/home",
@@ -18,6 +27,34 @@ const routes=[    //call the components here
  {
     path:"/c",
     component: Canvas
+},
+{
+    path:"/trousers",
+    component: trousers
+},
+{
+    path:"/jeans",
+    component: jeans
+},
+{
+    path:"/waistcoats",
+    component: waistcoats
+},
+{
+    path:"/tops",
+    component: tops
+},
+{
+    path:"/skirts",
+    component: skirts
+},
+{
+    path:"/dresses",
+    component: dresses
+},
+{
+    path:"/jackets",
+    component: jackets
 },
 ]  
 
