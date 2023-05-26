@@ -25,7 +25,7 @@
   
   <div class='right-login-form'>
   <h4  id="need">NEED ACCOUNT ?</h4>
-  <button @click="$router.push('/signup')"  class="login-btn" >SIGN UP </button> 
+  <button id="signup" @click="$router.push('/signup')"  class="login-btn" >SIGN UP </button> 
     </div>
   
   </div>
@@ -136,8 +136,8 @@
     }
     .login-btn{
         background-color: black;
-        width: 80%;
-        height: 13%;
+        width: 10%;
+        height: 5*0%;
         text-align: center;
         font-size: 90%;
         color: white;
@@ -152,6 +152,12 @@
       font-size: small;
       color: black;
       margin-bottom: 100px;
+    }
+    #signup{
+      width:350px;
+      
+      position: absolute;
+      
     }
   
   </style>

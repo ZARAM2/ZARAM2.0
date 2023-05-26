@@ -21,8 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li v-if="showSearch !== false" class="nav-item">
-              
-              <router-link to="/search"><Search /></router-link>
+             
+              <router-link id="search"  class="nav-link" to="/search">SEARCH </router-link>
+           
+           
             </li>
             <li v-if="currentUser" class="nav-item">
               <router-link class="nav-link" to="/login"  @click="Login">{{ name }}</router-link>
@@ -160,6 +162,12 @@ y=true
 
 div{
   padding: 10px;
+}
+#search{
+  border-bottom: 10px;
+  border-color: black;
+  text-decoration: underline;
+  
 }
 
 </style>
