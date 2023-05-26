@@ -12,12 +12,17 @@ import tops from "../components/women/tops/page.vue";
 import jeans from "../components/women/jeans/page.vue";
 import waistcoats from "../components/women/waistcoats/page.vue";
 import trousers from "../components/women/trousers/page.vue";
-
+import help from"../components/help/help.vue"
 const routes=[    //call the components here
  {
     path: "/home",
      component: Home
  },
+ {
+    path: "/help",
+     component: help
+ },
+
  {path:"/h",
  component: HelloWorldVue},
  {

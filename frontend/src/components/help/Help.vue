@@ -1,0 +1,134 @@
+<template>
+    <div class="help">
+      <Navbar />
+      <div class="form__group field">
+        <h3>HOW CAN WE HELP YOU?</h3>
+        <input
+          type="input"
+          class="form__field"
+          placeholder="Name"
+          name="name"
+          id="name"
+          v-model="query"
+        />
+      </div>
+      <div id="items-container">
+        <p v-for="(item, index) in helpItems" :key="index">{{ item.answer }}</p>
+      </div>
+    </div>
+  </template>
+  
+  <script>
+
+  import axios from "axios";
+  import Navbar from "../../components/NavBar.vue";
+  
+  export default {
+    name: "Helpbar",
+    components: {
+      Navbar,
+    },
+    data() {
+      return {
+        query: "",
+        helpItems: [],
+      };
+    },
+    watch: {
+      query: {
+        immediate: true,
+        handler(newQuery) {
+          this.fetchHelpItems(newQuery);
+        },
+      },
+    },
+    methods: {
+      fetchHelpItems(query) {
+        axios
+          .get(`localhost:3001/help/search?${query}`)
+          .then((response) => {
+            this.helpItems = response.data;
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      },
+    },
+  };
+  </script>
+<style>
+.help{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image: url("https://static.zara.net/photos///contents/mkt/spots/ss23-help-customer/subhome-xmedia-10-north//w/941/IMAGE-landscape-web-27470945-8c31-433a-9eaf-392114b6a91d-default_0.jpg?ts=1682518360676");
+    max-width: 100%;
+    height: auto;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  
+  h3{
+    color: #000000;
+  }
+  .form__group {
+    position: relative;
+    padding: 15px ;
+    margin-top: 300px;
+    width: 100%;
+    margin-left: 55px;
+  }
+  
+  /* Rest of the CSS code remains the same */
+  
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #9b9b9b, #9b9b9b);
+    border-image-slice: 1;
+  }
+  
+  .form__field:required,
+  .form__field:invalid {
+    box-shadow: none;
+  }
+
+</style>

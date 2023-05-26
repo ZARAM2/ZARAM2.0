@@ -14,6 +14,8 @@ router.get("/searchKids", item.searchKids)
 
 router.get("/cartItems/:id", item.getCartItems)
 
+
+
 router.post("/searchCategory", item.offcanvasSearch)
 router.post("/add", authenticate, item.add)
 
