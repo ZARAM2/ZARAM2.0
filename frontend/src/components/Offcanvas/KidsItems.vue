@@ -1,4 +1,5 @@
 <template>
+
      <ul className="offcanvas-content" >
       <RouterLink to="/girl" class="offcanvas-body">GIRL | 6-14 YEARS</RouterLink>
       <RouterLink to="/boy" class="offcanvas-body">BOY | 6-14 YEARS</RouterLink> 
@@ -9,11 +10,13 @@
   
   <script>
  
+
   import { RouterLink } from "vue-router";
   
   export default {
     components: {
-      
+
+     
       RouterLink,
     },
     data() {
@@ -36,6 +39,7 @@
   </script>
   
   <style scoped>
+
   .offcanvas-content{
   margin-top: 25px;
   display: flex;
@@ -59,5 +63,6 @@
   margin-bottom: 60px;
   cursor: pointer;
 }
+
   </style>
   

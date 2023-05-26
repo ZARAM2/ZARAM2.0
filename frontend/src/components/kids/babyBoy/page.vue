@@ -14,9 +14,11 @@
 </template>
 
 <script>
+
 import NavBar from "../frontend/components/NavBar.vue"
 import axios from "axios";
 import LargeOneItem from "@/components/OneItem/LargeOneItem.vue";
+
 
 export default {
   components: {

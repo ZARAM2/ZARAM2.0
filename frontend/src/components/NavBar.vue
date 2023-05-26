@@ -1,5 +1,9 @@
 <template>
   <div>
+
+    
+   
+
     <Offcanvas />
     <div id="pushImg"></div>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -39,8 +43,10 @@
         </div>
       </div>
     </nav>
+
   </div>
 </template>
+
 
 <script>
 import Offcanvas from "../components/Offcanvas/canvas.vue";
@@ -78,6 +84,7 @@ y=true
 
    return { name: x,
     check:y
+
 }
 },
 

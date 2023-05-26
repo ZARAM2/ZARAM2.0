@@ -6,10 +6,12 @@
       </div>
       <div style="margin-left: 30px;">
         <div id="gender-container">
+
           <button class="search-gender" @click="setChosen('woman')">WOMAN</button>
           <button class="search-gender" @click="setChosen('man')">MAN</button>
           <button class="search-gender" @click="setChosen('kids')">KIDS</button>
         </div>
+
       </div>
       <div>
         <WomanItems v-if="chosen === 'woman'" />
@@ -69,3 +71,4 @@ export default {
   cursor: pointer;
 }
 </style>
+

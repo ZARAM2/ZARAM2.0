@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import NavBar from '../components/NavBar.vue';
 
+
+
+
 export default {
   name: 'Home',
   components: {
@@ -20,9 +23,13 @@ export default {
     <div class="nav">
     <div class="d">
     <NavBar/>
+
+    
+
     </div>
  </div>
  
+
     
 <div>
  

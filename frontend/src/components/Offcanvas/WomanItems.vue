@@ -1,4 +1,5 @@
 <template>
+
     <ul>
      <li> <RouterLink to="/jackets" class="offcanvas-body">JACKETS | TRENCH COATS</RouterLink></li>
      <li><RouterLink to="/waistcoats" class="offcanvas-body">WAISTCOATS | GILETS</RouterLink></li>
@@ -13,11 +14,12 @@
   
   <script>
   
+
   import { RouterLink } from "vue-router";
   
   export default {
     components: {
-      
+
       RouterLink,
     },
     data() {
@@ -40,6 +42,7 @@
   </script>
   
   <style scoped>
+
   .offcanvas-content{
   margin-top: 25px;
   display: flex;
@@ -63,5 +66,6 @@
   margin-bottom: 60px;
   cursor: pointer;
 }
+
   </style>
   
