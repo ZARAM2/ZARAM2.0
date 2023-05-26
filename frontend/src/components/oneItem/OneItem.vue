@@ -6,6 +6,7 @@
         <p class="detail-text">{{ name }}</p>
         <p class="detail-text" style="position: absolute; transform: translateX(165px)">{{ price }} TND</p>
       </div>
+      <h1>hhhhhhhhhhhhhhhhh</h1>
       <AddToCart v-if="showAdd !== false" :id="id" />
     </div>
   </div>

@@ -89,7 +89,7 @@ const routes=[    //call the components here
     component: search
   },
 
-    path:"/signUp",
+    {path:"/signUp",
     component: SignUp
 },
 

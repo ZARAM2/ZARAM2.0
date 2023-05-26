@@ -7,7 +7,7 @@
           <button class="search-gender" @click="handleGenderClick('man')">MAN</button>
           <button class="search-gender" @click="handleGenderClick('kids')">KIDS</button>
         </div>
-        <input type="text" ref="searchInputRef" @input="setQuery($event.target.value)" placeholder="SEARCH FOR AN ITEM, COLOR, COLLECTION..." />
+        <input type="text" ref="searchInputRef" v-model="queries" @input="query(queries)" placeholder="SEARCH FOR AN ITEM, COLOR, COLLECTION..." />
       </div>
       <div id="items-container">
         <OneItem v-for="(item, index) in items" :key="index" :id="item._id" :name="item.name" :price="item.price" :image="item.image" />
@@ -28,7 +28,7 @@ import OneItem from '../oneItem/OneItem.vue'
     },
     data() {
       return {
-        query: "",
+        queries: "",
         items: [],
         gender: "woman"
       };
@@ -39,10 +39,9 @@ import OneItem from '../oneItem/OneItem.vue'
         if (this.$refs.searchInputRef) {
           this.$refs.searchInputRef.value = "";
         }
-      }
-    },
-    watch: {
+      },
       query(newQuery) {
+        console.log(this.query,2)
         if (newQuery.length) {
           let endpoint;
           if (this.gender === "woman") {
@@ -58,6 +57,9 @@ import OneItem from '../oneItem/OneItem.vue'
             });
         }
       },
+    },
+
+      
       gender(newGender) {
         if (this.query.length) {
           let endpoint;
@@ -75,7 +77,7 @@ import OneItem from '../oneItem/OneItem.vue'
         }
       }
     }
-  };
+  
   </script>
   
   <style>

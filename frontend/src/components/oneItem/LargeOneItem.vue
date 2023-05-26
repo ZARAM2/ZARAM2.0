@@ -3,8 +3,10 @@
       <img :src="image" :alt="name" />
       <h2>{{ name }}</h2>
       <h2>{{ price }} TND</h2>
+     
     <div>
     <AddToCart />
+    <h1>jjjjjjjjjjjjjjjjj</h1>
   </div>
       
     </div>
