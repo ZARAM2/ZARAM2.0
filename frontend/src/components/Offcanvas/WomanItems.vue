@@ -1,23 +1,25 @@
 <template>
-    
-      <RouterLink to="/woman/jackets" class="offcanvas-body">JACKETS | TRENCH COATS</RouterLink>
-      <RouterLink to="/woman/waistcoats" class="offcanvas-body">WAISTCOATS | GILETS</RouterLink>
-      <RouterLink to="/woman/dresses" class="offcanvas-body">DRESSES | JUMPSUITS</RouterLink>
-      <RouterLink to="/woman/shirts" class="offcanvas-body">SHIRTS</RouterLink>
-      <RouterLink to="/woman/tops" class="offcanvas-body">TOPS | BODYSUITS</RouterLink>
-      <RouterLink to="/woman/trousers" class="offcanvas-body">TROUSERS</RouterLink>
-      <RouterLink to="/woman/jeans" class="offcanvas-body">JEANS</RouterLink>
-      <RouterLink to="/woman/skirts" class="offcanvas-body">SKIRTS</RouterLink>
-    
+
+    <ul>
+     <li> <RouterLink to="/jackets" class="offcanvas-body">JACKETS | TRENCH COATS</RouterLink></li>
+     <li><RouterLink to="/waistcoats" class="offcanvas-body">WAISTCOATS | GILETS</RouterLink></li>
+      <li><RouterLink to="/dresses" class="offcanvas-body">DRESSES | JUMPSUITS</RouterLink></li>
+      <li><RouterLink to="/shirts" class="offcanvas-body">SHIRTS</RouterLink></li>
+      <li><RouterLink to="/tops" class="offcanvas-body">TOPS | BODYSUITS</RouterLink></li>
+      <li><RouterLink to="/trousers" class="offcanvas-body">TROUSERS</RouterLink></li>
+      <li><RouterLink to="/jeans" class="offcanvas-body">JEANS</RouterLink></li>
+      <li><RouterLink to="/skirts" class="offcanvas-body">SKIRTS</RouterLink></li>
+    </ul>
   </template>
   
   <script>
-  // import { motion } from "vue-motion";
+  
+
   import { RouterLink } from "vue-router";
   
   export default {
     components: {
-      // motion,
+
       RouterLink,
     },
     data() {
@@ -40,12 +42,30 @@
   </script>
   
   <style scoped>
-  .offcanvas-content {
-    /* Add your offcanvas content styles here */
-  }
-  
-  .offcanvas-body {
-    /* Add your offcanvas body styles here */
-  }
+
+  .offcanvas-content{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvas-body{
+  text-decoration: none;
+  color: black;
+}
+
+.search-gender{
+  background-color: inherit;
+  border:none ;
+}
+
+#menu{
+  height: 25px;
+  width: 25px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
   </style>
   

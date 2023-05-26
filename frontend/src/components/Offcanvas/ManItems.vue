@@ -1,22 +1,26 @@
 <template>
-   
-      <RouterLink to="/man/suits" class="offcanvas-body">SUITS</RouterLink>
-      <RouterLink to="/man/shirts" class="offcanvas-body">SHIRTS</RouterLink>
-      <RouterLink to="/man/jackets" class="offcanvas-body">JACKETS | OVERSHIRTS</RouterLink>
-      <RouterLink to="/man/trousers" class="offcanvas-body">TROUSERS</RouterLink>
-      <RouterLink to="/man/jeans" class="offcanvas-body">JEANS</RouterLink>
-      <RouterLink to="/man/shorts" class="offcanvas-body">SHORTS</RouterLink>
-      <RouterLink to="/man/hoodies" class="offcanvas-body">HOODIES | SWEATSHIRTS</RouterLink>
-    
+
+   <ul>
+      <li><RouterLink to="/suits" class="offcanvas-body">SUITS</RouterLink></li>
+      <li><RouterLink to="/shirts" class="offcanvas-body">SHIRTS</RouterLink></li>
+      <li><RouterLink to="/jackets" class="offcanvas-body">JACKETS | OVERSHIRTS</RouterLink></li>
+      <li><RouterLink to="/trousers" class="offcanvas-body">TROUSERS</RouterLink></li>
+      <li><RouterLink to="/jeans" class="offcanvas-body">JEANS</RouterLink></li>
+      <li><RouterLink to="/shorts" class="offcanvas-body">SHORTS</RouterLink></li>
+      <li><RouterLink to="/hoodies" class="offcanvas-body">HOODIES | SWEATSHIRTS</RouterLink></li>
+    </ul>
   </template>
   
   <script>
-  // import { motion } from "vue-motion";
+
+
   import { RouterLink } from "vue-router";
   
   export default {
     components: {
-      // motion,
+
+      
+
       RouterLink,
     },
     data() {
@@ -39,12 +43,30 @@
   </script>
   
   <style scoped>
-  .offcanvas-content {
-    /* Add your offcanvas content styles here */
-  }
-  
-  .offcanvas-body {
-    /* Add your offcanvas body styles here */
-  }
+
+  .offcanvas-content{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvas-body{
+  text-decoration: none;
+  color: black;
+}
+
+.search-gender{
+  background-color: inherit;
+  border:none ;
+}
+
+#menu{
+  height: 25px;
+  width: 25px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
   </style>
   

@@ -1,8 +1,10 @@
 <template>
   <div>
+
     <Navbar/>
     <div>
       <LargeOneItem
+
         v-for="(item, index) in items"
         :key="index"
         :image="item.image"
@@ -14,12 +16,14 @@
 </template>
 
 <script>
+
 import Navbar from "../../NavBar.vue";
 import LargeOneItem from "../../oneItem/LargeOneItem.vue";
 import axios from "axios";
 
 export default {
   name: "jackets",
+
   components: {
     Navbar,
     LargeOneItem,

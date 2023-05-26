@@ -9,9 +9,11 @@
 
 <script>
 
+
 import axios from "axios";
 import Navbar from "../../NavBar.vue";
 import LargeOneItem from "../../oneItem/LargeOneItem.vue";
+
 export default {
   components: {
     Navbar,

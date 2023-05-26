@@ -15,9 +15,10 @@
 
 <script>
 
+import NavBar from "../frontend/components/NavBar.vue"
 import axios from "axios";
-import Navbar from "../../NavBar.vue";
-import LargeOneItem from "../../oneItem/LargeOneItem.vue";
+import LargeOneItem from "@/components/OneItem/LargeOneItem.vue";
+
 
 export default {
   components: {

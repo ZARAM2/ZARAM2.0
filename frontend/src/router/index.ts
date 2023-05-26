@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 //import the components he
 import Home from "../components/Home.vue"
-import HelloWorldVue from "../components/HelloWorld.vue";
+// import HelloWorldVue from "../components/HelloWorld.vue";
 import Login from "../components/Login.vue"
+
 import Canvas from "../components/Offcanvas/Canvas.vue";
 //for the components man 
 import jackets from "../components/man/jackets/page.vue";
@@ -19,18 +20,23 @@ import boy from "../components/kids/boy/page.vue"
 import girl from "../components/kids/girl/page.vue"
 //search
 import search from "../components/search/page.vue"
+
+import Cart from "../components/Card/Card.vue"
+import SignUp from "../components/SignUp.vue";
+
 const routes=[    //call the components here
  {
-    path: "/home",
+    path: "/",
      component: Home
  },
- {path:"/h",
- component: HelloWorldVue},
+ {path:"/cart",
+ component: Cart},
  {
     path: "/login",
     component: Login
  },
  {
+
     path:"/c",
     component: Canvas
 },
@@ -82,6 +88,11 @@ const routes=[    //call the components here
     path: "/search",
     component: search
   },
+
+    path:"/signUp",
+    component: SignUp
+},
+
 ]  
 
 
