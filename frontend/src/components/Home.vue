@@ -2,10 +2,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import NavBar from '../components/NavBar.vue';
+
 export default {
   name: 'Home',
   components: {
+   
     NavBar
+    
   }
 }
 
@@ -15,8 +18,12 @@ export default {
 
 <template>
     <div class="nav">
+    <div class="d">
     <NavBar/>
- </div>   
+    </div>
+ </div>
+ 
+    
 <div>
  
     
@@ -149,6 +156,10 @@ export default {
   
     padding-bottom: 10px;
    
+}
+
+div{
+  padding: 30px;
 }
 </style>
 

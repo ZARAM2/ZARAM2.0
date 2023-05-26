@@ -1,20 +1,25 @@
 import { createRouter, createWebHistory } from "vue-router";
 //import the components he
 import Home from "../components/Home.vue"
-import HelloWorldVue from "../components/HelloWorld.vue";
+// import HelloWorldVue from "../components/HelloWorld.vue";
 import Login from "../components/Login.vue"
-
+import Cart from "../components/Card/Card.vue"
+import SignUp from "../components/SignUp.vue";
 const routes=[    //call the components here
  {
-    path: "/home",
+    path: "/",
      component: Home
  },
- {path:"/h",
- component: HelloWorldVue},
+ {path:"/cart",
+ component: Cart},
  {
     path: "/login",
     component: Login
- }
+ },
+ {
+    path:"/signUp",
+    component: SignUp
+},
 ]  
 
 
