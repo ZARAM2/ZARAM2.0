@@ -51,7 +51,7 @@ export default {
         }
         else{
             if(await bcrypt.compare(pass,(loggedUser as any).password)){
-                const token = jwt.sign({id: (loggedUser as any)._id},(process.env.token as Secret))
+                const token = jwt.sign({id: (loggedUser as any)._id},(process.env.token = "your_secret_or_private_key"))
                 res.send({
                     token: token,
                     id: (loggedUser as any)._id,
@@ -83,4 +83,3 @@ export default {
         })
     }
 }
-

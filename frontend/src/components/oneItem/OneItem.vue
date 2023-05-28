@@ -6,20 +6,20 @@
         <p class="detail-text">{{ name }}</p>
         <p class="detail-text" style="position: absolute; transform: translateX(165px)">{{ price }} TND</p>
       </div>
-      <h1>hhhhhhhhhhhhhhhhh</h1>
-      <AddToCart v-if="showAdd !== false" :id="id" />
+      <!-- <h1>hhhhhhhhhhhhhhhhh</h1>
+      <AddToCart v-if="showAdd !== false" :id="id" /> -->
     </div>
   </div>
 </template>
 
 <script>
 
-import AddToCart from "../AddToCart/page.vue";
+// import AddToCart from "../AddToCart/page.vue";
 
 export default {
   name: 'OneItem',
   components: {
-    AddToCart,
+   
   },
   props: {
     id: {

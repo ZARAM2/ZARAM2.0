@@ -38,8 +38,8 @@ export default {
     fetchItems() {
       axios
         .post("http://localhost:3001/items/searchCategory", {
-          gender: "babygirl",
-          type: "babygirl",
+          gender: "babyGirl",
+          type: "babyGirl",
         })
         .then((response) => {
           this.items = response.data;

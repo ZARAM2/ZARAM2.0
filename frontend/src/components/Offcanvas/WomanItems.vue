@@ -1,14 +1,14 @@
 <template>
 
     <ul>
-     <li> <RouterLink to="/jackets" class="offcanvas-body">JACKETS | TRENCH COATS</RouterLink></li>
-     <li><RouterLink to="/waistcoats" class="offcanvas-body">WAISTCOATS | GILETS</RouterLink></li>
-      <li><RouterLink to="/dresses" class="offcanvas-body">DRESSES | JUMPSUITS</RouterLink></li>
+     <li> <RouterLink to="/women/jackets" class="offcanvas-body">JACKETS | TRENCH COATS</RouterLink></li>
+     <li><RouterLink to="/women/waistcoats" class="offcanvas-body">WAISTCOATS | GILETS</RouterLink></li>
+      <li><RouterLink to="/women/dresses" class="offcanvas-body">DRESSES | JUMPSUITS</RouterLink></li>
       <li><RouterLink to="/shirts" class="offcanvas-body">SHIRTS</RouterLink></li>
-      <li><RouterLink to="/tops" class="offcanvas-body">TOPS | BODYSUITS</RouterLink></li>
-      <li><RouterLink to="/trousers" class="offcanvas-body">TROUSERS</RouterLink></li>
-      <li><RouterLink to="/jeans" class="offcanvas-body">JEANS</RouterLink></li>
-      <li><RouterLink to="/skirts" class="offcanvas-body">SKIRTS</RouterLink></li>
+      <li><RouterLink to="/women/tops" class="offcanvas-body">TOPS | BODYSUITS</RouterLink></li>
+      <li><RouterLink to="/women/trousers" class="offcanvas-body">TROUSERS</RouterLink></li>
+      <li><RouterLink to="/women/jeans" class="offcanvas-body">JEANS</RouterLink></li>
+      <li><RouterLink to="/women/skirts" class="offcanvas-body">SKIRTS</RouterLink></li>
     </ul>
   </template>
   
